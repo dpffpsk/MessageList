@@ -17,8 +17,6 @@ class KakaoChatLandingViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupTableView()
         
-//        let nibname = UINib(nibName: "KakaoChatTableViewCell", bundle: nil)
-//        tableView.register(nibname, forCellReuseIdentifier: "KakaoChatTableViewCell")
     }
 
     func setupTableView() {

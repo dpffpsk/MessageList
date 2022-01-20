@@ -17,6 +17,13 @@ class KakaoChatTableViewCell: UITableViewCell {
     @IBOutlet weak var lastMessageLabel: UILabel!
     @IBOutlet weak var lastSentDateLabel: UILabel!
     
+    override func layoutSubviews() {
+
+        senderImageView.layer.cornerRadius = 38
+//        senderImageView.layer.cornerRadius = senderImageView.frame.size.width / 2;
+        senderImageView.clipsToBounds = true
+    }
+    
     func configure(message: Message) {
         /*
          TODO: Cell이 생성되는 시점에서 메세지를 불러 렌더링해주세요
