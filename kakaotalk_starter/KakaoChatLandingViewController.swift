@@ -14,9 +14,7 @@ class KakaoChatLandingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setupTableView()
-        
     }
 
     func setupTableView() {
@@ -30,7 +28,6 @@ class KakaoChatLandingViewController: UIViewController {
 //UITableViewDataSource
 extension KakaoChatLandingViewController: UITableViewDataSource {
     // TODO: UITableViewDataSource를 설정해주세요.
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //TODO: list의 갯수만큼 나오게 해주세요.
         return list.count

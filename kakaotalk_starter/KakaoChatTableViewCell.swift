@@ -19,8 +19,8 @@ class KakaoChatTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
 
-        senderImageView.layer.cornerRadius = 38
 //        senderImageView.layer.cornerRadius = senderImageView.frame.size.width / 2;
+        senderImageView.layer.cornerRadius = 38
         senderImageView.clipsToBounds = true
     }
     
